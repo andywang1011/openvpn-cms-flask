@@ -86,8 +86,7 @@ character_set_server=utf8mb4
 ### 四、CMS部署
 
 #### 更新hosts
-'sed -i "/# GitHub520 Host Start/Q" /etc/hosts && curl https://raw.hellogithub.com/hosts >> /etc/hosts'
-自动更新/etc/hosts文件，可以添加到cron定时执行。使用前确保Github520内容在该文件最后部分。
+`sed -i "/# GitHub520 Host Start/Q" /etc/hosts && curl https://raw.hellogithub.com/hosts >> /etc/hosts` 自动更新/etc/hosts文件，可以添加到cron定时执行。使用前确保Github520内容在该文件最后部分。
 
 ##### python36
 `yum install -y gcc GeoIP GeoIP-devel python36  python36-setuptools  python36-devel`
